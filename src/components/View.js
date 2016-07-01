@@ -281,7 +281,7 @@ const View = React.createClass({
   },
 
   render() {
-    return null;
+    return <div>{ this.props && this.props.children }</div>;
   },
 });
 
