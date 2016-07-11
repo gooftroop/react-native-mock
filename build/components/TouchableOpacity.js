@@ -1,4 +1,4 @@
-var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};/**
+var _jsxFileName='src/components/TouchableOpacity.js';var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};/**
  * https://github.com/facebook/react-native/blob/master/Libraries/Components/Touchable/TouchableOpacity.js
  */
 var _react=require('react');var _react2=_interopRequireDefault(_react);
@@ -17,7 +17,7 @@ activeOpacity:_react2['default'].PropTypes.number}),
 
 
 render:function(){function render(){
-return null;}return render;}()});
+return _react2['default'].createElement('p',{__source:{fileName:_jsxFileName,lineNumber:20}},this.props&&this.props.children);}return render;}()});
 
 
 
