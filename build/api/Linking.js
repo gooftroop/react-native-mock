@@ -10,13 +10,22 @@ var _notifHandlers=new Map();
 var DEVICE_NOTIF_EVENT='openURL';
 
 // TODO(lmr):
-var Linking=function(){function Linking(){_classCallCheck(this,Linking);}_createClass(Linking,null,[{key:'addEventListener',
+var Linking=function(){function Linking(){_classCallCheck(this,Linking);}_createClass(Linking,null,[{key:'shouldFailOpen',value:function(){function shouldFailOpen(
+
+should){
+(0,_invariant2['default'])(
+typeof should==='boolean','Invalid test options: should be a boolean. Was: '+
+should);
+
+_LinkingManager2['default'].shouldFailOpen(should);}return shouldFailOpen;}()
+
+
 /**
    * Add a handler to Linking changes by listening to the `url` event type
    * and providing the handler
    *
    * @platform ios
-   */value:function(){function addEventListener(
+   */},{key:'addEventListener',value:function(){function addEventListener(
 type,handler){
 if(_Platform2['default'].OS==='android'){
 console.warn(

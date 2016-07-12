@@ -159,8 +159,18 @@ const ListView = React.createClass({
     return this.refs[SCROLLVIEW_REF].getInnerViewNode();
   },
 
+  _renderList(children) {
+    return React.Children.map(children, function (value) {
+      return <li>{value}</li>;
+    });
+  },
+
   render() {
-    return null;
+    return (
+      <ul>
+        {this.props.children && this._renderList(this.props.children)}
+      </ul>
+    );
   },
 });
 

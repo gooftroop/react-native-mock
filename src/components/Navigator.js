@@ -24,6 +24,7 @@ const NavigatorSceneConfigs = {
 };
 
 const Navigator = React.createClass({
+
   propTypes: {
     /**
      * Optional function that allows configuration about scene animations and
@@ -93,10 +94,39 @@ const Navigator = React.createClass({
   statics: {
     BreadcrumbNavigationBar: createMockComponent('NavigatorBreadcrumbNavigationBar'),
     NavigationBar: createMockComponent('NavigatorNavigationBar'),
-    SceneConfigs: NavigatorSceneConfigs,
+    SceneConfigs: NavigatorSceneConfigs
   },
+
+  /**
+   * [constructor description]
+   * @param  {[type]} props:   Object        [description]
+   * @param  {[type]} context: Object        [description]
+   * @return {[type]}          [description]
+   */
+  constructor(props: Object, context: Object) {
+    super(props, context);
+    this.currentScene = this.props.renderScene(this.props.initialRoute);
+  },
+
+  // Current scene to render
+  currentScene: null,
+
+  /**
+   * [simulateNavigation description]
+   * @param  {[type]} route [description]
+   * @return {[type]}       [description]
+   */
+  simulateNavigation(route) {
+    this.currentScene = this.props.renderScene(route, this);
+    this.render();
+  },
+
+  /**
+   * [render description]
+   * @return {[type]} [description]
+   */
   render() {
-    return null;
+    return this.currentScene;
   }
 });
 

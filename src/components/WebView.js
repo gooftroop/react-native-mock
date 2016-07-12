@@ -138,7 +138,7 @@ const WebView = React.createClass({
   },
 
   render() {
-    return null;
+    return <iframe>{this.props && this.props.children}</iframe>;
   },
 });
 

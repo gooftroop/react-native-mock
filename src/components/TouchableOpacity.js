@@ -17,7 +17,7 @@ const TouchableOpacity = React.createClass({
   },
 
   render() {
-      return <p>{ this.props && this.props.children }</p>;
+      return <button>{ this.props && this.props.children }</button>;
   },
 });
 

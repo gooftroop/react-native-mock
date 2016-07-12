@@ -242,7 +242,7 @@ const TextInput = React.createClass({
 
   },
   render() {
-    return null;
+    return <input type="text">{this.props && this.props.children}</input>;
   },
 });
 
