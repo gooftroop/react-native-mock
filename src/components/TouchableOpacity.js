@@ -20,6 +20,7 @@ const TouchableOpacity = React.createClass({
     const props = Object.assign({}, this.props);
     if (typeof props.onPress !== 'undefined') {
       props.onClick = props.onPress;
+      delete props.onPress;
     }
     return props;
   },

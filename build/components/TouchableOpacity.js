@@ -19,14 +19,15 @@ activeOpacity:_react2['default'].PropTypes.number}),
 proxiedProps:function(){function proxiedProps(){
 var props=_extends({},this.props);
 if(typeof props.onPress!=='undefined'){
-props.onClick=props.onPress;}
+props.onClick=props.onPress;
+delete props.onPress;}
 
 return props;}return proxiedProps;}(),
 
 
 render:function(){function render(){
 return(
-_react2['default'].createElement('button',_extends({},this.proxiedProps(),{__source:{fileName:_jsxFileName,lineNumber:29}}),
+_react2['default'].createElement('button',_extends({},this.proxiedProps(),{__source:{fileName:_jsxFileName,lineNumber:30}}),
 this.props&&this.props.children));}return render;}()});
 
 
