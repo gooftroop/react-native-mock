@@ -16,8 +16,20 @@ _TouchableWithoutFeedback2['default'].propTypes,{
 activeOpacity:_react2['default'].PropTypes.number}),
 
 
+proxiedProps:function(){function proxiedProps(){
+var props=_extends({},this.props);
+if(typeof props.onPress!=='undefined'){
+props.onClick=props.onPress;}
+
+return props;}return proxiedProps;}(),
+
+
 render:function(){function render(){
-return _react2['default'].createElement('button',{__source:{fileName:_jsxFileName,lineNumber:20}},this.props&&this.props.children);}return render;}()});
+return(
+_react2['default'].createElement('button',_extends({},this.proxiedProps(),{__source:{fileName:_jsxFileName,lineNumber:29}}),
+this.props&&this.props.children));}return render;}()});
+
+
 
 
 

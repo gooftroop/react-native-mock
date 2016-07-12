@@ -16,8 +16,20 @@ const TouchableOpacity = React.createClass({
     activeOpacity: React.PropTypes.number,
   },
 
+  proxiedProps() {
+    const props = Object.assign({}, this.props);
+    if (typeof props.onPress !== 'undefined') {
+      props.onClick = props.onPress;
+    }
+    return props;
+  },
+
   render() {
-      return <button>{ this.props && this.props.children }</button>;
+    return (
+      <button {...this.proxiedProps()}>
+        {this.props && this.props.children}
+      </button>
+    );
   },
 });
 
