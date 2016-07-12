@@ -11,6 +11,15 @@ const DEVICE_NOTIF_EVENT = 'openURL';
 
 // TODO(lmr):
 class Linking {
+
+    static shouldFailOpen(should) {
+        invariant(
+          typeof should === 'boolean',
+          `Invalid test options: should be a boolean. Was: ${should}`
+        );
+        LinkingManager.shouldFailOpen(should);
+    }
+
   /**
    * Add a handler to Linking changes by listening to the `url` event type
    * and providing the handler
