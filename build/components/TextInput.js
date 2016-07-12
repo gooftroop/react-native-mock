@@ -1,4 +1,4 @@
-var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _jsxFileName='src/components/TextInput.js';var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _TextInputState=require('../api/TextInputState');var _TextInputState2=_interopRequireDefault(_TextInputState);
 var _reactTimerMixin=require('react-timer-mixin');var _reactTimerMixin2=_interopRequireDefault(_reactTimerMixin);
 var _NativeMethodsMixin=require('../mixins/NativeMethodsMixin');var _NativeMethodsMixin2=_interopRequireDefault(_NativeMethodsMixin);
@@ -242,7 +242,7 @@ clear:function(){function clear(){}return clear;}(),
 
 
 render:function(){function render(){
-return null;}return render;}()});
+return _react2['default'].createElement('input',{type:'text',__source:{fileName:_jsxFileName,lineNumber:245}},this.props&&this.props.children);}return render;}()});
 
 
 

@@ -1,4 +1,4 @@
-var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _EdgeInsetsPropType=require('../propTypes/EdgeInsetsPropType');var _EdgeInsetsPropType2=_interopRequireDefault(_EdgeInsetsPropType);
+var _jsxFileName='src/components/WebView.js';var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _EdgeInsetsPropType=require('../propTypes/EdgeInsetsPropType');var _EdgeInsetsPropType2=_interopRequireDefault(_EdgeInsetsPropType);
 var _react=require('react');var _react2=_interopRequireDefault(_react);
 var _View=require('./View');var _View2=_interopRequireDefault(_View);
 var _ScrollView=require('./ScrollView');var _ScrollView2=_interopRequireDefault(_ScrollView);
@@ -138,7 +138,7 @@ goBack:function(){function goBack(){
 }return goBack;}(),
 
 render:function(){function render(){
-return null;}return render;}()});
+return _react2['default'].createElement('iframe',{__source:{fileName:_jsxFileName,lineNumber:141}},this.props&&this.props.children);}return render;}()});
 
 
 

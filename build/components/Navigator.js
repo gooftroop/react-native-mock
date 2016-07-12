@@ -24,6 +24,7 @@ VerticalDownSwipeJump:NavigatorSceneConfigType};
 
 
 var Navigator=_react2['default'].createClass({displayName:'Navigator',
+
 propTypes:{
 /**
      * Optional function that allows configuration about scene animations and
@@ -95,8 +96,36 @@ BreadcrumbNavigationBar:(0,_createMockComponent2['default'])('NavigatorBreadcrum
 NavigationBar:(0,_createMockComponent2['default'])('NavigatorNavigationBar'),
 SceneConfigs:NavigatorSceneConfigs},
 
+
+/**
+   * [constructor description]
+   * @param  {[type]} props:   Object        [description]
+   * @param  {[type]} context: Object        [description]
+   * @return {[type]}          [description]
+   */
+componentDidMount:function(){function componentDidMount(){
+this.currentScene=this.props.renderScene(this.props.initialRoute);}return componentDidMount;}(),
+
+
+// Current scene to render
+currentScene:null,
+
+/**
+   * [simulateNavigation description]
+   * @param  {[type]} route [description]
+   * @return {[type]}       [description]
+   */
+simulateNavigation:function(){function simulateNavigation(route){
+this.currentScene=this.props.renderScene(route,this);
+this.render();}return simulateNavigation;}(),
+
+
+/**
+   * [render description]
+   * @return {[type]} [description]
+   */
 render:function(){function render(){
-return null;}return render;}()});
+return this.currentScene;}return render;}()});
 
 
 

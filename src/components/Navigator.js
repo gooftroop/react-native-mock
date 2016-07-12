@@ -103,8 +103,7 @@ const Navigator = React.createClass({
    * @param  {[type]} context: Object        [description]
    * @return {[type]}          [description]
    */
-  constructor(props: Object, context: Object) {
-    super(props, context);
+  componentDidMount() {
     this.currentScene = this.props.renderScene(this.props.initialRoute);
   },
 

@@ -1,7 +1,7 @@
+var _jsxFileName='src/components/TouchableWithoutFeedback.js';/**
+ * https://github.com/facebook/react-native/blob/master/Libraries/Components/Touchable/TouchableWithoutFeedback.js
+ */
 var _react=require('react');var _react2=_interopRequireDefault(_react);
-
-
-
 var _EdgeInsetsPropType=require('../propTypes/EdgeInsetsPropType');var _EdgeInsetsPropType2=_interopRequireDefault(_EdgeInsetsPropType);
 var _View=require('./View');var _View2=_interopRequireDefault(_View);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{'default':obj};}
 
@@ -64,8 +64,8 @@ pressRetentionOffset:_EdgeInsetsPropType2['default'],
 hitSlop:_EdgeInsetsPropType2['default']},
 
 render:function(){function render(){
-return null;}return render;}()});/**
- * https://github.com/facebook/react-native/blob/master/Libraries/Components/Touchable/TouchableWithoutFeedback.js
- */
+return _react2['default'].createElement('div',{__source:{fileName:_jsxFileName,lineNumber:67}},this.props&&this.props.children);}return render;}()});
+
+
 
 module.exports=TouchableWithoutFeedback;

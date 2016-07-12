@@ -17,7 +17,7 @@ activeOpacity:_react2['default'].PropTypes.number}),
 
 
 render:function(){function render(){
-return _react2['default'].createElement('p',{__source:{fileName:_jsxFileName,lineNumber:20}},this.props&&this.props.children);}return render;}()});
+return _react2['default'].createElement('button',{__source:{fileName:_jsxFileName,lineNumber:20}},this.props&&this.props.children);}return render;}()});
 
 
 

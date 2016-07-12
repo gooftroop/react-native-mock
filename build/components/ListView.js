@@ -159,8 +159,16 @@ getInnerViewNode:function(){function getInnerViewNode(){
 return this.refs[SCROLLVIEW_REF].getInnerViewNode();}return getInnerViewNode;}(),
 
 
+_renderList:function(){function _renderList(children){
+return _react2['default'].Children.map(children,function(value){
+return _react2['default'].createElement('li',{__source:{fileName:_jsxFileName,lineNumber:164}},value);});}return _renderList;}(),
+
+
+
 render:function(){function render(){
-_react2['default'].createElement('ul',{__source:{fileName:_jsxFileName,lineNumber:163}});}return render;}()});
+return(
+_react2['default'].createElement('ul',{__source:{fileName:_jsxFileName,lineNumber:170}},
+this.props.children&&this._renderList(this.props.children)));}return render;}()});
 
 
 

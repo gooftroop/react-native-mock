@@ -1,10 +1,10 @@
-var _react=require('react');var _react2=_interopRequireDefault(_react);
-
-
-
-var _ColorPropType=require('../propTypes/ColorPropType');var _ColorPropType2=_interopRequireDefault(_ColorPropType);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{'default':obj};}/**
+var _jsxFileName='src/components/StatusBar.js';/**
  * https://github.com/facebook/react-native/blob/master/Libraries/Components/StatusBar/StatusBar.js
  */
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ColorPropType=require('../propTypes/ColorPropType');var _ColorPropType2=_interopRequireDefault(_ColorPropType);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{'default':obj};}
+
+
 var _backgroundColor='';
 var _barStyle={};
 var _hidden=false;
@@ -65,7 +65,7 @@ return _translucent;}return __getTranslucent;}()},
 
 
 render:function(){function render(){
-return null;}return render;}()});
+return _react2['default'].createElement('div',{__source:{fileName:_jsxFileName,lineNumber:68}},this.props&&this.props.children);}return render;}()});
 
 
 
